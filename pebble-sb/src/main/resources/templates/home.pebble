@@ -12,7 +12,8 @@
 				</div>
 				<div class="col-md-6">
 					<h4><a href="profile?id={{ post.userId }}">{{ post.userName }}</a><small> {{ post.date | date("MMM-DD") }}</small></h4>
-					<p> {{ post.details }} </p>
+                    <p> {{ post.details }} </p>
+                    <p> {{ i18n('i18n.Words', 'some_text') }} </p>
 					<p class="like-count"> {{ post.likes }} likes </p>
 					<div class="comments">
 						<input type="text" placeholder="Write a comment..." />
